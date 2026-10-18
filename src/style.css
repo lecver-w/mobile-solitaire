@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --app-height: 100vh;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  touch-action: manipulation;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0d1e18;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Themes */
+.theme-emerald {
+  background: radial-gradient(circle at 50% 30%, #174d38 0%, #0c2b1e 70%, #061811 100%);
+}
+
+.theme-ocean {
+  background: radial-gradient(circle at 50% 30%, #17364d 0%, #0c1e2b 70%, #061118 100%);
+}
+
+.theme-obsidian {
+  background: radial-gradient(circle at 50% 30%, #2b2e3a 0%, #181920 70%, #0d0e12 100%);
+}
+
+/* Card 3D Perspective & Animations */
+.card-perspective {
+  perspective: 1000px;
+}
+
+.card-flip-inner {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.card-flipped {
+  transform: rotateY(180deg);
+}
+
+/* Prevent unwanted drag ghost in mobile browser */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
