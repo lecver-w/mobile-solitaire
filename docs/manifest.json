@@ -1,0 +1,17 @@
+{
+  "name": "经典纸牌 - Solitaire",
+  "short_name": "经典纸牌",
+  "description": "经典横屏移动端克朗代克纸牌游戏",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0c2b1e",
+  "theme_color": "#0c2b1e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
